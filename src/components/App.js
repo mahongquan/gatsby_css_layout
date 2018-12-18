@@ -236,7 +236,7 @@ class Root extends Component {
           </A>
         </Tag>
         <Tag css={this.state.style_box}>
-          <Link style={{  marginRight: "1em",visibility:visible_home}} to="/">
+          <Link style={{  marginRight: "1em",visibility:visible_home}} to="/home/">
             Home
           </Link>
           <Link style={{  visibility:visible_toc}} to="/toc">Table of Contents</Link>

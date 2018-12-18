@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
 import Elem, { Tag, NavWrapper, LinkPrev } from '../components/Elem'
-class No_layout extends Component {
+import App from '../components/App'
+export default class No_layout extends Component {
   render() {
     return (
+    <App>
       <div>
         <h1 className="content">no layout</h1>
 
@@ -19,12 +21,12 @@ class No_layout extends Component {
           the very important <code>display</code> property.
         </p>
         <NavWrapper>
-          <LinkPrev href="/index">Previous</LinkPrev>
+          <LinkPrev href="/home/">Previous</LinkPrev>
           <LinkPrev href="/display/">Next</LinkPrev>
         </NavWrapper>
         <footer>1 / 19</footer>
       </div>
+    </App>
     )
   }
 }
-export default () => <No_layout />

@@ -4,7 +4,7 @@ import { LinkToc, Tag } from '../components/Elem'
 import AceEditor from 'react-ace'
 import 'brace/mode/css'
 import 'brace/theme/github'
-
+import App from '../components/App'
 const Toc_style = `
     display:flex;
     flex-direction:column;
@@ -17,7 +17,7 @@ const Toc_style = `
     }
 `
 
-class Toc extends Component {
+export default class Toc extends Component {
   constructor() {
     super()
     this.state = {
@@ -34,6 +34,7 @@ class Toc extends Component {
 
   render() {
     return (
+     <App>
       <div>
         <div className="content" style={{ position: 'relative' }}>
           <h1 className="content">Table of Contents</h1>
@@ -116,8 +117,7 @@ class Toc extends Component {
             <LinkToc href="/about/">about this site</LinkToc>
           </Tag>
         </div>
-      </div>
+      </div></App>
     )
   }
 }
-export default () => <Toc />

@@ -37,7 +37,6 @@ section {
         <Elem className="clearfix">
           <Elem
             tag="nav"
-            color={this.props.theme.red}
             style={{
               float: 'left',
               width: '200px',

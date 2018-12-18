@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
 import Highlight from 'react-highlight'
 import Elem, { Tag, NavWrapper, LinkPrev } from '../components/Elem'
-class Max_width extends Component {
+import App from '../components/App'
+export default class Max_width extends Component {
   render() {
     return (
+      <App>
       <div>
         <h1 className="content">max-width</h1>
         <style jsx="true">{`
@@ -33,8 +35,7 @@ class Max_width extends Component {
             including IE7+ so you shouldn&apos;t be afraid of using it.
           </p>
         </Elem>
-      </div>
+      </div></App>
     )
   }
 }
-export default () => <Max_width />

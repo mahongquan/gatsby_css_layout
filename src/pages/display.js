@@ -10,7 +10,7 @@ display:none;
 //visibility:hidden;
 color:red;
 `
-class Display extends Component {
+export default class Display extends Component {
   constructor() {
     super()
     this.state = {
@@ -24,6 +24,7 @@ class Display extends Component {
   }
   render() {
     return (
+      <App>
       <div>
         <h1 className="content">the &quot;display&quot; property</h1>
         <p className="content">
@@ -116,11 +117,7 @@ class Display extends Component {
         </NavWrapper>
         <footer>2 / 19</footer>
       </div>
+      </App>
     )
   }
 }
-export default () => (
-  <App>
-    <Display />
-  </App>
-)

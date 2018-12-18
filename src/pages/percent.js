@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Highlight from 'react-highlight'
 import Elem from '../components/Elem'
-import App from './app'
+// import App from './app'
 class percent extends Component {
   render() {
     return (
@@ -115,8 +115,6 @@ section {
 }
 export default () => {
   return (
-    <App>
       <percent />
-    </App>
   )
 }
