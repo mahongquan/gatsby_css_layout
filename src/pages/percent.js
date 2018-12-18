@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
-import Highlight from 'react-highlight';
-import Elem from '../components/Elem';
-export default class percent extends Component<Props> {
+import React, { Component } from 'react'
+import Highlight from 'react-highlight'
+import Elem from '../components/Elem'
+import App from './app'
+class percent extends Component {
   render() {
     return (
       <React.Fragment>
@@ -86,7 +87,12 @@ section {
               nav to fix it, because the right column wouldn&apos;t respect it.
             </p>
           </Elem>
-          <Elem tag="section" green className="ipsum" style={{ marginLeft: '25%' }}>
+          <Elem
+            tag="section"
+            green
+            className="ipsum"
+            style={{ marginLeft: '25%' }}
+          >
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
               imperdiet, nulla et dictum interdum, nisi lorem egestas odio,
@@ -103,8 +109,14 @@ section {
             </p>
           </Elem>
         </Elem>
-  
       </React.Fragment>
-    );
+    )
   }
+}
+export default () => {
+  return (
+    <App>
+      <percent />
+    </App>
+  )
 }

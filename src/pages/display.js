@@ -1,30 +1,30 @@
-import React, { Component } from 'react';
-import Elem,{Tag,NavWrapper,LinkPrev} from '../components/Elem';
-import ElemInline from '../components/ElemInline';
-import AceEditor from 'react-ace';
-import 'brace/mode/css';
-import 'brace/theme/github';
-const css=`
+import React, { Component } from 'react'
+import Elem, { Tag, NavWrapper, LinkPrev } from '../components/Elem'
+import ElemInline from '../components/ElemInline'
+import AceEditor from 'react-ace'
+import App from '../components/App'
+import 'brace/mode/css'
+import 'brace/theme/github'
+const css = `
 display:none;
 //visibility:hidden;
 color:red;
-`;
-class Display extends Component<Props> {
-    constructor(){
-      super();
-      this.state= {
-        css:css,
-      }
+`
+class Display extends Component {
+  constructor() {
+    super()
+    this.state = {
+      css: css,
     }
-    cssChange=(newValue)=>{
-        this.setState({
-            css:newValue
-        });
-    }
+  }
+  cssChange = newValue => {
+    this.setState({
+      css: newValue,
+    })
+  }
   render() {
     return (
       <div>
-
         <h1 className="content">the &quot;display&quot; property</h1>
         <p className="content">
           <code>display</code> is CSS&apos;s most important property for
@@ -57,19 +57,26 @@ class Display extends Component<Props> {
             element is the most common inline element, since you use them for
             links.
           </p>
-          <div style={{position:"relative"}}>
+          <div style={{ position: 'relative' }}>
             <h2>none</h2>
-            <AceEditor ref="editor"
-                    style={{  margin:"auto",maxWidth:"600px",height:"100px"
-                                ,border:"solid gray 5px"
-                              }}
-                    mode="css"
-                    theme="github"
-                    value={this.state.css}
-                    onChange={this.cssChange}
-                    name="UNIQUE_ID_OF_DIV"
-                    editorProps={{$blockScrolling: true}} />
-            <Tag css={this.state.css} id="idnone" >You found me!</Tag>
+            <AceEditor
+              ref="editor"
+              style={{
+                margin: 'auto',
+                maxWidth: '600px',
+                height: '100px',
+                border: 'solid gray 5px',
+              }}
+              mode="css"
+              theme="github"
+              value={this.state.css}
+              onChange={this.cssChange}
+              name="UNIQUE_ID_OF_DIV"
+              editorProps={{ $blockScrolling: true }}
+            />
+            <Tag css={this.state.css} id="idnone">
+              You found me!
+            </Tag>
           </div>
           <p>
             Another common display value is <code>none</code>. Some specialized
@@ -84,13 +91,15 @@ class Display extends Component<Props> {
             will hide the element, but the element will still take up the space
             it would if it was fully visible.
           </p>
-          
+
           <h2>other display values</h2>
           <p>
             There are plenty of more exotic display values, such as{' '}
             <code>list-item</code> and <code>table</code>.{' '}
-            <a href="https://developer.mozilla.org/en-US/docs/CSS/display">Here is an exhaustive list</a>. We&apos;ll discuss{' '}
-            <code>inline-block</code> and <code>flex</code> later on.
+            <a href="https://developer.mozilla.org/en-US/docs/CSS/display">
+              Here is an exhaustive list
+            </a>. We&apos;ll discuss <code>inline-block</code> and{' '}
+            <code>flex</code> later on.
           </p>
           <h2>extra credit</h2>
           <p>
@@ -101,13 +110,17 @@ class Display extends Component<Props> {
             is making inline <code>li</code> elements for horizontal menus.
           </p>
         </div>
-      <NavWrapper>
+        <NavWrapper>
           <LinkPrev href="/no_layout/">Previous</LinkPrev>
           <LinkPrev href="/max_width/">Next</LinkPrev>
-      </NavWrapper>
-       <footer>2 / 19</footer>
+        </NavWrapper>
+        <footer>2 / 19</footer>
       </div>
-    );
+    )
   }
 }
-export default ()=><Display />
+export default () => (
+  <App>
+    <Display />
+  </App>
+)

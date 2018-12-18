@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import Highlight from 'react-highlight';
-import Elem from '../components/Elem';
-export default class box_sizing extends Component<Props> {
+import React, { Component } from 'react'
+import Highlight from 'react-highlight'
+import Elem from '../components/Elem'
+export default class box_sizing extends Component {
   render() {
     return (
       <React.Fragment>
@@ -82,6 +82,6 @@ export default class box_sizing extends Component<Props> {
           <a href="http://caniuse.com/#search=box-sizing">IE8+</a>.
         </p>
       </React.Fragment>
-    );
+    )
   }
 }

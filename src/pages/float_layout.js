@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import Highlight from 'react-highlight';
-import Elem from '../components/Elem';
-import {withTheme} from 'styled-components';
+import React, { Component } from 'react'
+import Highlight from 'react-highlight'
+import Elem from '../components/Elem'
+import { withTheme } from 'styled-components'
 // console.log(ThemeProvider);
 
 // class E0 extends Component{
@@ -14,12 +14,10 @@ import {withTheme} from 'styled-components';
 // const E1=withTheme(E0);
 // const theme={red:"#D64078",green:"#96C02E",orange:"#FDC72F"};
 
-class float_layout extends Component<Props> {
+class float_layout extends Component {
   render() {
     return (
       <React.Fragment>
-        
-
         <h1 className="content">float layout example</h1>
         <p className="content">
           It&apos;s very common to do entire layouts using <code>float</code>.
@@ -37,8 +35,14 @@ section {
 }`}</Highlight>
         </figure>
         <Elem className="clearfix">
-          <Elem tag="nav" color={this.props.theme.red} style={{ float: "left",
-            width: "200px"}}>
+          <Elem
+            tag="nav"
+            color={this.props.theme.red}
+            style={{
+              float: 'left',
+              width: '200px',
+            }}
+          >
             <ul>
               <li>
                 <a href="float-layout.html">Home</a>
@@ -60,7 +64,7 @@ section {
               </li>
             </ul>
           </Elem>
-          <Elem tag="section"  style={{marginLeft:"200px"}}>
+          <Elem tag="section" style={{ marginLeft: '200px' }}>
             <p>
               This example works just like the last one. Notice we put a{' '}
               <code>clearfix</code> on the container. It&apos;s not needed in
@@ -68,7 +72,7 @@ section {
               than the non-floated content.
             </p>
           </Elem>
-          <Elem tag="section"  className="ipsum"  style={{marginLeft:"200px"}}>
+          <Elem tag="section" className="ipsum" style={{ marginLeft: '200px' }}>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
               imperdiet, nulla et dictum interdum, nisi lorem egestas odio,
@@ -85,9 +89,16 @@ section {
             </p>
           </Elem>
         </Elem>
-        <span style={{display:"block",height:0,clear:"both",visibility:"hidden"}} />
+        <span
+          style={{
+            display: 'block',
+            height: 0,
+            clear: 'both',
+            visibility: 'hidden',
+          }}
+        />
       </React.Fragment>
-    );
+    )
   }
 }
-export default  withTheme(float_layout);
+export default withTheme(float_layout)

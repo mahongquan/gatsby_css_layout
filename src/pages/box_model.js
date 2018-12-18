@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import Highlight from 'react-highlight';
-import Elem from '../components/Elem';
-export default class box_model extends Component<Props> {
+import React, { Component } from 'react'
+import Highlight from 'react-highlight'
+import Elem from '../components/Elem'
+export default class box_model extends Component {
   render() {
     return (
       <React.Fragment>
@@ -60,6 +60,6 @@ export default class box_model extends Component<Props> {
           don&apos;t have to do that anymore...
         </p>
       </React.Fragment>
-    );
+    )
   }
 }

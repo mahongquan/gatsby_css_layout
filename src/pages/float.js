@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import Highlight from 'react-highlight';
-export default class float extends Component<Props> {
+import React, { Component } from 'react'
+import Highlight from 'react-highlight'
+export default class float extends Component {
   render() {
     return (
       <React.Fragment>
@@ -35,8 +35,7 @@ export default class float extends Component<Props> {
           non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo
           purus. Mauris quis diam velit.
         </p>
-
       </React.Fragment>
-    );
+    )
   }
 }

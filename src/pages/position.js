@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
-import Highlight from 'react-highlight';
-import Elem from '../components/Elem';
-export default class position extends Component<Props> {
+import React, { Component } from 'react'
+import Highlight from 'react-highlight'
+import Elem from '../components/Elem'
+import App from '../components/App'
+class position extends Component {
   render() {
     return (
       <React.Fragment>
@@ -19,7 +20,7 @@ export default class position extends Component<Props> {
   position: static;
 }`}</Highlight>
         </figure>
-        <div id="static" style={{position: 'static'}}>
+        <div id="static" style={{ position: 'static' }}>
           <p style={{ marginTop: '22px' }}>
             <code>static</code> is the default value. An element with{' '}
             <code>position: static;</code> is not positioned in any special way.
@@ -41,7 +42,7 @@ export default class position extends Component<Props> {
   width: 500px;
 }`}</Highlight>
         </figure>
-        <Elem id="relative1" style={{position: 'relative'}}>
+        <Elem id="relative1" style={{ position: 'relative' }}>
           <p style={{ marginTop: '22px' }}>
             <code>relative</code> behaves the same as <code>static</code> unless
             you add some extra properties.
@@ -107,7 +108,9 @@ export default class position extends Component<Props> {
         </p>
         <p className="content">
           Mobile browsers have surprisingly shaky support for fixed.{' '}
-          <a href="http://bradfrostweb.com/blog/mobile/fixed-position/">Learn more about the situation here</a>.
+          <a href="http://bradfrostweb.com/blog/mobile/fixed-position/">
+            Learn more about the situation here
+          </a>.
         </p>
         <h2 className="content">absolute</h2>
         <p className="content">
@@ -170,6 +173,13 @@ export default class position extends Component<Props> {
           more practical example.
         </p>
       </React.Fragment>
-    );
+    )
   }
+}
+export default () => {
+  return (
+    <App>
+      <position />
+    </App>
+  )
 }

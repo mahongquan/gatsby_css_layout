@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import Highlight from 'react-highlight';
-import Elem from '../components/Elem';
-export default class position_example extends Component<Props> {
+import React, { Component } from 'react'
+import Highlight from 'react-highlight'
+import Elem from '../components/Elem'
+export default class position_example extends Component {
   render() {
     return (
       <React.Fragment>
@@ -74,7 +74,12 @@ body {
               absolute and static elements would overlap
             </p>
           </Elem>
-          <Elem tag="section" green className="ipsum" style={{ marginLeft: '200px' }}>
+          <Elem
+            tag="section"
+            green
+            className="ipsum"
+            style={{ marginLeft: '200px' }}
+          >
             <p style={{ marginTop: '22px' }}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
               imperdiet, nulla et dictum interdum, nisi lorem egestas odio,
@@ -121,8 +126,7 @@ body {
           coming pages we&apos;ll discuss other layout techniques that have
           different pros and cons.
         </p>
-        
       </React.Fragment>
-    );
+    )
   }
 }

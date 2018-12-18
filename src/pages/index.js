@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
-import TranLinks from '../components/TranLinks';
-import {About,LinkPrev,NavWrapper} from '../components/Elem';
-
-class Index extends Component<Props> {
+import React, { Component } from 'react'
+import TranLinks from '../components/TranLinks'
+import { About, LinkPrev, NavWrapper } from '../components/Elem'
+import App from '../components/App'
+class Index extends Component {
   render() {
     return (
       <div>
-        <About >
+        <About>
           <p>
             This site teaches the CSS fundamentals that are used in any
             website&apos;s layout.
@@ -21,13 +21,17 @@ class Index extends Component<Props> {
             project.
           </p>
         </About>
-      <NavWrapper>
-        <LinkPrev href="/no_layout/">start</LinkPrev>
-      </NavWrapper>
-        
-      <TranLinks />
+        <NavWrapper>
+          <LinkPrev href="/no_layout/">start</LinkPrev>
+        </NavWrapper>
+
+        <TranLinks />
       </div>
-    );
+    )
   }
 }
-export default () =><Index />;
+export default () => (
+  <App>
+    <Index />
+  </App>
+)

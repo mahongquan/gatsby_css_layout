@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Elem,{Tag,NavWrapper,LinkPrev,LinkStyle,A} from './Elem';
 import styled from 'styled-components';
 import Ace from './Ace';
+import { Link } from "gatsby";
 const menu_style=`
 background-color: whiteSmoke;
 text-align: center;
@@ -68,7 +69,7 @@ padding: 1em 0;
 }
 `;
 const pages=["index.html","no-layout.html","display.html","margin-auto.html","max-width.html","box-model.html","box-sizing.html","position.html","position-example.html","float.html","clear.html","clearfix.html","float-layout.html","percent.html","media-queries.html","inline-block.html","inline-block-layout.html","column.html","flexbox.html","frameworks.html","about.html"]
-class Root extends Component<Props> {
+class Root extends Component {
       constructor(){
       super();
       this.state= {
@@ -235,10 +236,10 @@ class Root extends Component<Props> {
           </A>
         </Tag>
         <Tag css={this.state.style_box}>
-          <a style={{  marginRight: "1em",visibility:visible_home}} href="/">
+          <Link style={{  marginRight: "1em",visibility:visible_home}} to="/">
             Home
-          </a>
-          <a style={{  visibility:visible_toc}} href="/toc/">Table of Contents</a>
+          </Link>
+          <Link style={{  visibility:visible_toc}} to="/toc">Table of Contents</Link>
         </Tag>
         <div id="container">{this.props.children}</div>
         {

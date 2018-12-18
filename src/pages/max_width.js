@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import Highlight from 'react-highlight';
-import Elem,{Tag,NavWrapper,LinkPrev} from '../components/Elem';
-class Max_width extends Component<Props> {
+import React, { Component } from 'react'
+import Highlight from 'react-highlight'
+import Elem, { Tag, NavWrapper, LinkPrev } from '../components/Elem'
+class Max_width extends Component {
   render() {
     return (
       <div>
@@ -27,13 +27,14 @@ class Max_width extends Component<Props> {
           </p>
           <p>
             By the way, <code>max-width</code> is{' '}
-            <a href="http://caniuse.com/#search=max-width">supported by all major browsers</a> including IE7+ so
-            you shouldn&apos;t be afraid of using it.
+            <a href="http://caniuse.com/#search=max-width">
+              supported by all major browsers
+            </a>{' '}
+            including IE7+ so you shouldn&apos;t be afraid of using it.
           </p>
         </Elem>
-
       </div>
-    );
+    )
   }
 }
-export default ()=><Max_width />;
+export default () => <Max_width />

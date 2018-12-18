@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import Highlight from 'react-highlight';
-import Elem from '../components/Elem';
-export default class inline_block_layout extends Component<Props> {
+import React, { Component } from 'react'
+import Highlight from 'react-highlight'
+import Elem from '../components/Elem'
+export default class inline_block_layout extends Component {
   render() {
     return (
       <React.Fragment>
@@ -40,11 +40,15 @@ nav {
 }`}</Highlight>
         </figure>
         <Elem className="container">
-          <Elem tag="nav" red style={{
-            display: "inline-block",
-            verticalAlign: "top",
-            width: "25%"
-          }}>
+          <Elem
+            tag="nav"
+            red
+            style={{
+              display: 'inline-block',
+              verticalAlign: 'top',
+              width: '25%',
+            }}
+          >
             <ul>
               <li>
                 <a href="inline-block-layout.html">Home</a>
@@ -66,10 +70,15 @@ nav {
               </li>
             </ul>
           </Elem>
-          <Elem color="red" id="column" style={{
-            display: "inline-block",
-            verticalAlign: "top",
-            width: "75%" }}>
+          <Elem
+            color="red"
+            id="column"
+            style={{
+              display: 'inline-block',
+              verticalAlign: 'top',
+              width: '75%',
+            }}
+          >
             <Elem green tag="section">
               <p>Tada!</p>
             </Elem>
@@ -91,8 +100,7 @@ nav {
             </Elem>
           </Elem>
         </Elem>
-
       </React.Fragment>
-    );
+    )
   }
 }

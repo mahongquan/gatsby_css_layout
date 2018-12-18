@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import Elem,{Tag,NavWrapper,LinkPrev} from '../components/Elem';
-class No_layout extends Component<Props> {
+import React, { Component } from 'react'
+import Elem, { Tag, NavWrapper, LinkPrev } from '../components/Elem'
+class No_layout extends Component {
   render() {
     return (
       <div>
@@ -19,12 +19,12 @@ class No_layout extends Component<Props> {
           the very important <code>display</code> property.
         </p>
         <NavWrapper>
-          <LinkPrev href="/">Previous</LinkPrev>
+          <LinkPrev href="/index">Previous</LinkPrev>
           <LinkPrev href="/display/">Next</LinkPrev>
-      </NavWrapper>
-       <footer>1 / 19</footer>
+        </NavWrapper>
+        <footer>1 / 19</footer>
       </div>
-    );
+    )
   }
 }
-export default ()=><No_layout />
+export default () => <No_layout />
