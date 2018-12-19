@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Elem,{Tag,NavWrapper,LinkPrev,LinkStyle,A} from './Elem';
-import styled from 'styled-components';
+import {Tag,A} from './Elem';
+// import styled from 'styled-components';
 import Ace from './Ace';
 import { Link } from "gatsby";
 const menu_style=`

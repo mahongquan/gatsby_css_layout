@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react'
 import TranLinks from '../components/TranLinks'
 import { About, LinkPrev, NavWrapper } from '../components/Elem'
 import App from '../components/App'
-export default class Index extends Component {
-  render() {
+export default 
+  ()=>{
     return (
     <App>
       <div>
@@ -31,4 +31,3 @@ export default class Index extends Component {
     </App>
     )
   }
-}
