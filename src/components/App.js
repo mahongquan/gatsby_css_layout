@@ -3,6 +3,7 @@ import {Tag,A} from './Elem';
 // import styled from 'styled-components';
 import Ace from './Ace';
 import { Link } from "gatsby";
+
 const menu_style=`
 background-color: whiteSmoke;
 text-align: center;
