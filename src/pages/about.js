@@ -23,13 +23,13 @@ export default class about extends Component {
         `}</style>
         <div id="credits">
           <a href="http://incompl.com">
-            <img alt="Greg Smith" src="./images/author1.jpeg" />
+            <img alt="Greg Smith" src="/images/author1.jpeg" />
           </a>
           <a href="http://www.isaacdurazo.com/">
-            <img alt="Isaac Durazo" src="./images/author2.jpeg" />
+            <img alt="Isaac Durazo" src="/images/author2.jpeg" />
           </a>
           <a href="http://bocoup.com">
-            <img alt="Bocoup" src="./images/bob.png" />
+            <img alt="Bocoup" src="/images/bob.png" />
           </a>
         </div>
         <div className="content">

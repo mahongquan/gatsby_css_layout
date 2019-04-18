@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import {Tag,A} from './Elem';
-// import styled from 'styled-components';
+import {Tag,A,LinkPrev,NavWrapper} from './Elem';
 import Ace from './Ace';
 import { Link } from "gatsby";
 
@@ -69,7 +68,7 @@ padding: 1em 0;
   }
 }
 `;
-const pages=["index.html","no-layout.html","display.html","margin-auto.html","max-width.html","box-model.html","box-sizing.html","position.html","position-example.html","float.html","clear.html","clearfix.html","float-layout.html","percent.html","media-queries.html","inline-block.html","inline-block-layout.html","column.html","flexbox.html","frameworks.html","about.html"]
+const pages=["/no-layout","/display","/margin-auto/","/max-width/","/box-model/","/box-sizing/","/position/","/position-example/","/float/","/clear/","/clearfix/","/float-layout/","/percent/","/media-queries/","/inline-block/","/inline-block-layout/","/column/","/flexbox/","/frameworks/","/about/","/"]
 class Root extends Component {
       constructor(){
       super();
@@ -91,7 +90,8 @@ class Root extends Component {
   getPrevNext=()=>{
     let prev,next,at;
     for(var i=0;i<pages.length;i++){
-       if(this.props.history.location.pathname.indexOf(pages[i])>=0){
+       console.log(window);
+       if(window.location.pathname.indexOf(pages[i])>=0){
          prev=i-1;
          next=i+1;
          if(prev>=0){
@@ -115,33 +115,33 @@ class Root extends Component {
   render() {
      console.log(this.props);
      let visible_home=true,visible_toc=true;
-    //   if(this.props.history.location.pathname.indexOf("index.html")>=0){
-    //     visible_home="hidden"
-    //   }
-    //   else{
-    //     visible_home="visible" 
-    //   }
-    //   if(this.props.history.location.pathname.indexOf("toc.html")>=0){
-    //     visible_toc="hidden"
-    //   }
-    //   else{
-    //     visible_toc="visible" 
-    //   }
-    //   var arr1=this.getPrevNext();
-    //   let prev=arr1[0];
-    //   let next=arr1[1];
-    //   let i=arr1[2]+1;
-    //   if(prev){
-    //     prev=<LinkPrev to={prev}>Previous</LinkPrev>
-    //   }
-    //   if(next){
-    //     next=<LinkPrev to={next}>Next</LinkPrev>
-    //   }
-    //   let nav;
-    //   if(prev || next){
-    //     nav=<React.Fragment><NavWrapper>{prev}{next}</NavWrapper>
-    //     <footer>{i} / 21</footer></React.Fragment>
-    //   }
+      // if(window.location.pathname.indexOf("")>=0){
+      //   visible_home="hidden"
+      // }
+      // else{
+      //   visible_home="visible" 
+      // }
+      // if(this.props.history.location.pathname.indexOf("toc.html")>=0){
+      //   visible_toc="hidden"
+      // }
+      // else{
+      //   visible_toc="visible" 
+      // }
+      // var arr1=this.getPrevNext();
+      // let prev=arr1[0];
+      // let next=arr1[1];
+      // let i=arr1[2]+1;
+      // if(prev){
+      //   prev=<LinkPrev to={prev}>Previous</LinkPrev>
+      // }
+      // if(next){
+      //   next=<LinkPrev to={next}>Next</LinkPrev>
+      // }
+      // let nav;
+      // if(prev || next){
+      //   nav=<React.Fragment><NavWrapper>{prev}{next}</NavWrapper>
+      //   <footer>{i} / 21</footer></React.Fragment>
+      // }
     return (
       <div>
         <style jsx="true">{`
