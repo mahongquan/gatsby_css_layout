@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
 import Highlight from 'react-highlight'
-import Elem, { A } from '../components/Elem'
+import Elem, {A, Tag, NavWrapper, LinkPrev } from '../components/Elem'
+import App from '../components/App'
 export default class clearfix extends Component {
   render() {
     return (
+    <App>
       <React.Fragment>
         <h1 className="content">the clearfix hack</h1>
         <p className="content">
@@ -156,6 +158,12 @@ export default class clearfix extends Component {
           browsers today.
         </p>
       </React.Fragment>
+      <NavWrapper>
+          <LinkPrev href="/clear/">Previous</LinkPrev>
+          <LinkPrev href="/float_layout/">Next</LinkPrev>
+        </NavWrapper>
+        <footer>6 / 19</footer>
+      </App>
     )
   }
 }

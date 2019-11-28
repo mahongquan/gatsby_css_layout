@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import Highlight from 'react-highlight'
-import Elem from '../components/Elem'
+import Elem, {A, Tag, NavWrapper, LinkPrev } from '../components/Elem'
+import App from '../components/App'
+
 import { withTheme } from 'styled-components'
 // console.log(ThemeProvider);
 
@@ -17,6 +19,7 @@ import { withTheme } from 'styled-components'
 class float_layout extends Component {
   render() {
     return (
+      <App>
       <React.Fragment>
         <h1 className="content">float layout example</h1>
         <p className="content">
@@ -97,6 +100,12 @@ section {
           }}
         />
       </React.Fragment>
+      <NavWrapper>
+          <LinkPrev href="/clearfix/">Previous</LinkPrev>
+          <LinkPrev href="/percent/">Next</LinkPrev>
+        </NavWrapper>
+        <footer>6 / 19</footer>
+      </App>
     )
   }
 }

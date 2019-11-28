@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Highlight from 'react-highlight'
-import Elem, { Div } from '../components/Elem'
+import Elem, {A, Div,Tag, NavWrapper, LinkPrev } from '../components/Elem'
+import App from '../components/App'
 const css_str = `
           .three-column {
             padding: 1em;
@@ -15,6 +16,7 @@ const css_str = `
 export default class column extends Component {
   render() {
     return (
+      <App>
       <React.Fragment>
         <h1 className="content">column</h1>
         <p className="content">
@@ -62,6 +64,12 @@ export default class column extends Component {
           </a>. Otherwise, off to the next topic.
         </p>
       </React.Fragment>
+      <NavWrapper>
+          <LinkPrev href="/inline_block_layout/">Previous</LinkPrev>
+          <LinkPrev href="/flexbox/">Next</LinkPrev>
+        </NavWrapper>
+        <footer>6 / 19</footer>
+      </App>
     )
   }
 }

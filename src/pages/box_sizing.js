@@ -1,9 +1,12 @@
 import React, { Component } from 'react'
 import Highlight from 'react-highlight'
-import Elem from '../components/Elem'
+import Elem, { Tag, NavWrapper, LinkPrev } from '../components/Elem'
+import App from '../components/App'
+
 export default class box_sizing extends Component {
   render() {
     return (
+      <App>
       <React.Fragment>
         <h1 className="content">box-sizing</h1>
         <style jsx="true">{`
@@ -82,6 +85,12 @@ export default class box_sizing extends Component {
           <a href="http://caniuse.com/#search=box-sizing">IE8+</a>.
         </p>
       </React.Fragment>
+       <NavWrapper>
+          <LinkPrev href="/box_model/">Previous</LinkPrev>
+          <LinkPrev href="/position/">Next</LinkPrev>
+        </NavWrapper>
+        <footer>5 / 19</footer>
+   </App>
     )
   }
 }

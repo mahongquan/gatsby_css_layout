@@ -1,8 +1,11 @@
 import React, { Component } from 'react'
 import Highlight from 'react-highlight'
+import Elem, { Tag, NavWrapper, LinkPrev } from '../components/Elem'
+import App from '../components/App'
 export default class float extends Component {
   render() {
     return (
+    <App>
       <React.Fragment>
         <h1 className="content">float</h1>
         <p className="content">
@@ -36,6 +39,12 @@ export default class float extends Component {
           purus. Mauris quis diam velit.
         </p>
       </React.Fragment>
+       <NavWrapper>
+          <LinkPrev href="/position_example/">Previous</LinkPrev>
+          <LinkPrev href="/clear/">Next</LinkPrev>
+        </NavWrapper>
+        <footer>6 / 19</footer>
+   </App>
     )
   }
 }

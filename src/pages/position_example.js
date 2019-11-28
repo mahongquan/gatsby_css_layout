@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
 import Highlight from 'react-highlight'
-import Elem from '../components/Elem'
+import Elem, { Tag, NavWrapper, LinkPrev } from '../components/Elem'
+import App from '../components/App'
 export default class position_example extends Component {
   render() {
     return (
+    <App>
       <React.Fragment>
         <h1 className="content">position example</h1>
         <p className="content">
@@ -127,6 +129,13 @@ body {
           different pros and cons.
         </p>
       </React.Fragment>
+       <NavWrapper>
+          <LinkPrev href="/position/">Previous</LinkPrev>
+          <LinkPrev href="/float/">Next</LinkPrev>
+        </NavWrapper>
+        <footer>6 / 19</footer>
+   </App>
+
     )
   }
 }

@@ -1,7 +1,11 @@
 import React, { Component } from 'react'
+import Elem, {A, Div,Tag, NavWrapper, LinkPrev } from '../components/Elem'
+import App from '../components/App'
+
 export default class about extends Component {
   render() {
     return (
+      <App>
       <React.Fragment>
         <h1 className="content">about this site</h1>
         <style jsx="true">{`
@@ -44,6 +48,10 @@ export default class about extends Component {
           </a>
         </div>
       </React.Fragment>
+<NavWrapper>
+          <LinkPrev href="/frameworks/">Previous</LinkPrev>
+        </NavWrapper>
+      </App>
     )
   }
 }

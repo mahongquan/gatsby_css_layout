@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
 import Highlight from 'react-highlight'
-import Elem from '../components/Elem'
+import Elem, { Tag, NavWrapper, LinkPrev } from '../components/Elem'
 import App from '../components/App'
-class position extends Component {
+export default class position extends Component {
   render() {
     return (
+      <App>
       <React.Fragment>
         <h1 className="content">position</h1>
         <p className="content">
@@ -173,13 +174,13 @@ class position extends Component {
           more practical example.
         </p>
       </React.Fragment>
+       <NavWrapper>
+          <LinkPrev href="/box_sizing/">Previous</LinkPrev>
+          <LinkPrev href="/position_example/">Next</LinkPrev>
+        </NavWrapper>
+        <footer>6 / 19</footer>
+   </App>
+
     )
   }
-}
-export default () => {
-  return (
-    <App>
-      <position />
-    </App>
-  )
 }

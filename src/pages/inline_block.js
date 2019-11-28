@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import Elem, { Div } from '../components/Elem'
+import Elem, {A, Div,Tag, NavWrapper, LinkPrev } from '../components/Elem'
+import App from '../components/App'
 import AceEditor from 'react-ace'
 import 'brace/mode/css'
 import 'brace/theme/github'
@@ -71,7 +72,8 @@ export default class inline_block extends Component {
       return this.box2(key)
     })
     return (
-      <React.Fragment>
+      <App>
+            <React.Fragment>
         <h1 className="content">inline-block</h1>
         <p className="content">
           You can create a grid of boxes that fills the browser width and wraps
@@ -195,6 +197,13 @@ export default class inline_block extends Component {
           support if you're curious to learn more. Otherwise, let's continue.
         </p>
       </React.Fragment>
+            <NavWrapper>
+          <LinkPrev href="/media_queries/">Previous</LinkPrev>
+          <LinkPrev href="/inline_block_layout/">Next</LinkPrev>
+        </NavWrapper>
+        <footer>6 / 19</footer>
+      </App>
+
     )
   }
 }

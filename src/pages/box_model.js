@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
 import Highlight from 'react-highlight'
-import Elem from '../components/Elem'
+import Elem, { Tag, NavWrapper, LinkPrev } from '../components/Elem'
+import App from '../components/App'
 export default class box_model extends Component {
   render() {
     return (
+      <App>
       <React.Fragment>
         <h1 className="content">the box model</h1>
         <style jsx="true">{`
@@ -60,6 +62,12 @@ export default class box_model extends Component {
           don&apos;t have to do that anymore...
         </p>
       </React.Fragment>
+              <NavWrapper>
+          <LinkPrev href="/box_model/">Previous</LinkPrev>
+          <LinkPrev href="/box_sizing/">Next</LinkPrev>
+        </NavWrapper>
+        <footer>4 / 19</footer>
+   </App>
     )
   }
 }

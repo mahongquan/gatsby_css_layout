@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-// import Highlight from 'react-highlight'
-import Elem, { Tag } from '../components/Elem'
+import Elem, {A, Div,Tag, NavWrapper, LinkPrev } from '../components/Elem'
+import App from '../components/App'
 import Ace from '../components/Ace'
 // const alignitems_options = [
 //   'center',
@@ -141,6 +141,7 @@ export default class flexbox extends Component {
 
   render() {
     return (
+      <App>
       <React.Fragment>
         <h1 className="content">flexbox</h1>
 
@@ -333,6 +334,12 @@ export default class flexbox extends Component {
           <div style={{ minHeight: '150px' }} />
         </div>
       </React.Fragment>
+      <NavWrapper>
+          <LinkPrev href="/column/">Previous</LinkPrev>
+          <LinkPrev href="/frameworks/">Next</LinkPrev>
+        </NavWrapper>
+        <footer>6 / 19</footer>
+      </App>
     )
   }
 }

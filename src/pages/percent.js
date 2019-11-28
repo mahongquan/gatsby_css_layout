@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
 import Highlight from 'react-highlight'
-import Elem from '../components/Elem'
-// import App from './app'
-class percent extends Component {
+import Elem, {A, Tag, NavWrapper, LinkPrev } from '../components/Elem'
+import App from '../components/App'
+
+export default class percent extends Component {
   render() {
     return (
+      <App>
       <React.Fragment>
         <h1 className="content">percent width</h1>
         <p className="content">
@@ -110,11 +112,13 @@ section {
           </Elem>
         </Elem>
       </React.Fragment>
+       <NavWrapper>
+          <LinkPrev href="/float_layout/">Previous</LinkPrev>
+          <LinkPrev href="/media_queries/">Next</LinkPrev>
+        </NavWrapper>
+        <footer>6 / 19</footer>
+      </App>
     )
   }
 }
-export default () => {
-  return (
-      <percent />
-  )
-}
+

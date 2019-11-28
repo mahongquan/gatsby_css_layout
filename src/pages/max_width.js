@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Highlight from 'react-highlight'
-import Elem from '../components/Elem'
+import Elem, { Tag, NavWrapper, LinkPrev } from '../components/Elem'
 import App from '../components/App'
 export default class Max_width extends Component {
   render() {
@@ -35,7 +35,13 @@ export default class Max_width extends Component {
             including IE7+ so you shouldn&apos;t be afraid of using it.
           </p>
         </Elem>
-      </div></App>
+        <NavWrapper>
+          <LinkPrev href="/display/">Previous</LinkPrev>
+          <LinkPrev href="/box_model/">Next</LinkPrev>
+        </NavWrapper>
+        <footer>3 / 19</footer>
+      </div>
+      </App>
     )
   }
 }

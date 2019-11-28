@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
 import Highlight from 'react-highlight'
-import Elem from '../components/Elem'
+import Elem, {A, Div,Tag, NavWrapper, LinkPrev } from '../components/Elem'
+import App from '../components/App'
 export default class inline_block_layout extends Component {
   render() {
     return (
+    <App>
       <React.Fragment>
         <h1 className="content">inline-block layout</h1>
         <div className="content">
@@ -101,6 +103,13 @@ nav {
           </Elem>
         </Elem>
       </React.Fragment>
+            <NavWrapper>
+          <LinkPrev href="/inline_block/">Previous</LinkPrev>
+          <LinkPrev href="/column/">Next</LinkPrev>
+        </NavWrapper>
+        <footer>6 / 19</footer>
+      </App>
+
     )
   }
 }

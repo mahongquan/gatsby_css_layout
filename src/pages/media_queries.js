@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
-import Elem, { A, Tag } from '../components/Elem'
+import Elem, {A, Tag, NavWrapper, LinkPrev } from '../components/Elem'
+import App from '../components/App'
+
 import AceEditor from 'react-ace'
 import 'brace/mode/css'
 import 'brace/theme/github'
@@ -36,6 +38,7 @@ export default class media_queries extends Component {
   }
   render() {
     return (
+      <App>
       <div>
         <h1 className="content">media queries</h1>
         <p className="content">
@@ -182,6 +185,12 @@ export default class media_queries extends Component {
           </p>
         </div>
       </div>
+      <NavWrapper>
+          <LinkPrev href="/percent/">Previous</LinkPrev>
+          <LinkPrev href="/inline_block/">Next</LinkPrev>
+        </NavWrapper>
+        <footer>6 / 19</footer>
+      </App>
     )
   }
 }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Highlight from 'react-highlight'
-import Elem, { Tag } from '../components/Elem'
+import Elem, { Tag, NavWrapper, LinkPrev } from '../components/Elem'
+import App from '../components/App'
 import AceEditor from 'react-ace'
 import 'brace/mode/css'
 import 'brace/theme/github'
@@ -36,6 +37,7 @@ export default class clear extends Component {
 
   render() {
     return (
+      <App>
       <React.Fragment>
         <h1 className="content">clear</h1>
         <p className="content">
@@ -122,6 +124,12 @@ export default class clear extends Component {
           editorProps={{ $blockScrolling: true }}
         />
       </React.Fragment>
+      <NavWrapper>
+          <LinkPrev href="/float/">Previous</LinkPrev>
+          <LinkPrev href="/clearfix/">Next</LinkPrev>
+        </NavWrapper>
+        <footer>6 / 19</footer>
+      </App>
     )
   }
 }
