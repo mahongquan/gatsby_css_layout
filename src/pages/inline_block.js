@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Elem, {A, Div,Tag, NavWrapper, LinkPrev } from '../components/Elem'
+import Elem, {Div, NavWrapper, LinkPrev } from '../components/Elem'
 import App from '../components/App'
 import AceEditor from 'react-ace'
 import 'brace/mode/css'

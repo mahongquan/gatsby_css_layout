@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Elem, {A, Div,Tag, NavWrapper, LinkPrev } from '../components/Elem'
+import  { NavWrapper, LinkPrev } from '../components/Elem'
 import App from '../components/App'
 
 export default class frameworks extends Component {

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Tag,A,LinkPrev,NavWrapper} from './Elem';
+import {Tag,A} from './Elem';
 import Ace from './Ace';
 import { Link } from "gatsby";
 

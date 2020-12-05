@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Highlight from 'react-highlight'
-import Elem, {A, Tag, NavWrapper, LinkPrev } from '../components/Elem'
+import Elem, {A, NavWrapper, LinkPrev } from '../components/Elem'
 import App from '../components/App'
 export default class clearfix extends Component {
   render() {

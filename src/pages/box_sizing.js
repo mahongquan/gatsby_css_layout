@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Highlight from 'react-highlight'
-import Elem, { Tag, NavWrapper, LinkPrev } from '../components/Elem'
+import Elem, {  NavWrapper, LinkPrev } from '../components/Elem'
 import App from '../components/App'
 
 export default class box_sizing extends Component {

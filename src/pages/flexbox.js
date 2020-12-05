@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Elem, {A, Div,Tag, NavWrapper, LinkPrev } from '../components/Elem'
+import Elem, {Tag, NavWrapper, LinkPrev } from '../components/Elem'
 import App from '../components/App'
 import Ace from '../components/Ace'
 // const alignitems_options = [

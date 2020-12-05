@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Highlight from 'react-highlight'
-import Elem, { Tag, NavWrapper, LinkPrev } from '../components/Elem'
+import  {  NavWrapper, LinkPrev } from '../components/Elem'
 import App from '../components/App'
 export default class float extends Component {
   render() {

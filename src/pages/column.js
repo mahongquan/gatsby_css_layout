@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Highlight from 'react-highlight'
-import Elem, {A, Div,Tag, NavWrapper, LinkPrev } from '../components/Elem'
+import Elem, {Div, NavWrapper, LinkPrev } from '../components/Elem'
 import App from '../components/App'
 const css_str = `
           .three-column {
