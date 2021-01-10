@@ -383,6 +383,9 @@ class Browser extends React.Component {
       return (
         <span
           key={idx}
+          role = "button"
+          tabIndex={0}
+          onKeyDown={()=>{}}
           onMouseEnter={() => this.onMouseEnter(idx)}
           onMouseLeave={() => this.onMouseLeave(idx)}
           style={style1}
@@ -484,8 +487,12 @@ class Browser extends React.Component {
           placement="bottom"
         >
           <Tooltip id="tooltip1">
-            <div onClick={this.onRename}>rename</div>
-            <div onClick={this.onRemove}>remove</div>
+            <div role = "button"
+          tabIndex={0}
+          onKeyDown={()=>{}} onClick={this.onRename}>rename</div>
+            <div role = "button"
+          tabIndex={0}
+          onKeyDown={()=>{}} onClick={this.onRemove}>remove</div>
           </Tooltip>
         </Overlay>
         <div

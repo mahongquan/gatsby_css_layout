@@ -300,12 +300,13 @@ class ContactEdit2New extends Component {
           <Modal.Title>编辑仪器信息</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <table id="table_input" className="table-condensed">
+          <table id="table_input"  className="table-condensed">
             <tbody>
               <tr>
                 <td align="right">ID:</td>
                 <td>
                   <input
+                    style={{width:"200px"}}
                     type="text"
                     id="id"
                     name="id"
@@ -314,11 +315,11 @@ class ContactEdit2New extends Component {
                   />
                 </td>
                 <td>
-                  <label>用户单位:</label>
+                  <span>用户单位:</span>
                 </td>
                 <td>
                   <input
-                    style={{ backgroundColor: this.state.bg.yonghu }}
+                    style={{width:"200px", backgroundColor: this.state.bg.yonghu }}
                     type="text"
                     id="yonghu"
                     name="yonghu"
@@ -331,7 +332,7 @@ class ContactEdit2New extends Component {
                 <td>客户地址:</td>
                 <td>
                   <input
-                    style={{ backgroundColor: this.state.bg.addr }}
+                    style={{ width:"200px", backgroundColor: this.state.bg.addr }}
                     type="text"
                     id="addr"
                     name="addr"
@@ -344,7 +345,7 @@ class ContactEdit2New extends Component {
                   <Autosuggest
                     inputProps={{
                       id: 'channels-autocomplete',
-                      style: { backgroundColor: this.state.bg.channels },
+                      style: { width:"200px", backgroundColor: this.state.bg.channels },
                       value: this.state.contact.channels,
                       onChange: this.channels_change,
                     }}
@@ -370,13 +371,13 @@ class ContactEdit2New extends Component {
               </tr>
               <tr>
                 <td>
-                  <label>仪器型号:</label>
+                  <span>仪器型号:</span>
                 </td>
                 <td>
                   <Autosuggest
                     inputProps={{
                       id: 'yiqixinghao-autocomplete',
-                      style: { backgroundColor: this.state.bg.yiqixinghao },
+                      style: { width:"200px", backgroundColor: this.state.bg.yiqixinghao },
                       value: this.state.contact.yiqixinghao,
                       onChange: this.yiqixinghao_change,
                     }}
@@ -401,11 +402,11 @@ class ContactEdit2New extends Component {
                   />
                 </td>
                 <td>
-                  <label>仪器编号:</label>
+                  <span>仪器编号:</span>
                 </td>
                 <td>
                   <input
-                    style={{ backgroundColor: this.state.bg.yiqibh }}
+                    style={{ width:"200px", backgroundColor: this.state.bg.yiqibh }}
                     type="text"
                     id="yiqibh"
                     name="yiqibh"
@@ -416,11 +417,11 @@ class ContactEdit2New extends Component {
               </tr>
               <tr>
                 <td align="right">
-                  <label>包箱:</label>
+                  <span>包箱:</span>
                 </td>
                 <td>
                   <input
-                    style={{ backgroundColor: this.state.bg.baoxiang }}
+                    style={{width:"200px",  backgroundColor: this.state.bg.baoxiang }}
                     type="text"
                     id="baoxiang"
                     name="baoxiang"
@@ -431,7 +432,7 @@ class ContactEdit2New extends Component {
                 <td align="right">审核:</td>
                 <td>
                   <input
-                    style={{ backgroundColor: this.state.bg.shenhe }}
+                    style={{width:"200px",  backgroundColor: this.state.bg.shenhe }}
                     type="text"
                     id="shenhe"
                     name="shenhe"
@@ -442,14 +443,14 @@ class ContactEdit2New extends Component {
               </tr>
               <tr>
                 <td>
-                  <label>入库时间:</label>
+                  <span>入库时间:</span>
                 </td>
                 <td>
                   <Datetime
                     ref="datetime1"
                     timeFormat={false}
                     inputProps={{
-                      style: { backgroundColor: this.state.bg.yujifahuo_date },
+                      style: {width:"200px",  backgroundColor: this.state.bg.yujifahuo_date },
                     }}
                     id="yujifahuo_date"
                     name="yujifahuo_date"
@@ -463,7 +464,7 @@ class ContactEdit2New extends Component {
                     ref="datetime2"
                     timeFormat={false}
                     inputProps={{
-                      style: { backgroundColor: this.state.bg.tiaoshi_date },
+                      style: { width:"200px", backgroundColor: this.state.bg.tiaoshi_date },
                     }}
                     name="tiaoshi_date"
                     value={moment(this.state.contact.tiaoshi_date,"YYYY-MM-DD")}
@@ -473,11 +474,11 @@ class ContactEdit2New extends Component {
               </tr>
               <tr>
                 <td>
-                  <label>合同编号:</label>
+                  <span>合同编号:</span>
                 </td>
                 <td>
                   <input
-                    style={{ backgroundColor: this.state.bg.hetongbh }}
+                    style={{ width:"200px", backgroundColor: this.state.bg.hetongbh }}
                     type="text"
                     id="hetongbh"
                     name="hetongbh"
@@ -488,7 +489,7 @@ class ContactEdit2New extends Component {
                 <td align="right">方法:</td>
                 <td>
                   <input
-                    style={{ backgroundColor: this.state.bg.method }}
+                    style={{width:"200px",  backgroundColor: this.state.bg.method }}
                     type="text"
                     id="method"
                     name="method"
@@ -507,7 +508,7 @@ class ContactEdit2New extends Component {
                 <td align="right">电气:</td>
                 <td>
                   <input
-                    style={{ backgroundColor: this.state.bg.dianqi }}
+                    style={{ width:"200px", backgroundColor: this.state.bg.dianqi }}
                     type="text"
                     name="dianqi"
                     value={this.state.contact.dianqi}
@@ -517,7 +518,7 @@ class ContactEdit2New extends Component {
                 <td align="right">机械:</td>
                 <td>
                   <input
-                    style={{ backgroundColor: this.state.bg.jixie }}
+                    style={{width:"200px",  backgroundColor: this.state.bg.jixie }}
                     type="text"
                     name="jixie"
                     value={this.state.contact.jixie}
@@ -529,7 +530,7 @@ class ContactEdit2New extends Component {
                 <td align="right">红外:</td>
                 <td>
                   <input
-                    style={{ backgroundColor: this.state.bg.hongwai }}
+                    style={{ width:"200px", backgroundColor: this.state.bg.hongwai }}
                     type="text"
                     name="hongwai"
                     value={this.state.contact.hongwai}
@@ -539,7 +540,7 @@ class ContactEdit2New extends Component {
                 <td align="right">热导:</td>
                 <td>
                   <input
-                    style={{ backgroundColor: this.state.bg.redao }}
+                    style={{ width:"200px", backgroundColor: this.state.bg.redao }}
                     type="text"
                     name="redao"
                     value={this.state.contact.redao}

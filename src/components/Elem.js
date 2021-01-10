@@ -202,7 +202,7 @@ export default class Elem extends Component {
       position: relative;
     `;
     if(css){
-      Element=Element.extend`${css}`
+      Element=styled(Element)`${css}`;
     }
     let idstr,cls_str;
     if (this.props.id) {

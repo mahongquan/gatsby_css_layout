@@ -86,7 +86,7 @@ class DlgCopyPack extends React.Component {
             <tbody>
               <tr>
                 <td>
-                  <label>包名称:</label>
+                  <span>包名称:</span>
                 </td>
                 <td>
                   <Autosuggest
@@ -109,7 +109,7 @@ class DlgCopyPack extends React.Component {
               </tr>
               <tr>
                 <td>
-                  <label>新包名称:</label>
+                  <span>新包名称:</span>
                 </td>
                 <td>
                   <input

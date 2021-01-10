@@ -150,7 +150,7 @@ class DlgDetail extends React.Component {
                 <td>ID:</td>
                 <td>{this.state.contact.id}</td>
                 <td>
-                  <label>用户单位:</label>
+                  <span>用户单位:</span>
                 </td>
                 <td>{this.state.contact.yonghu}</td>
               </tr>
@@ -162,17 +162,17 @@ class DlgDetail extends React.Component {
               </tr>
               <tr>
                 <td>
-                  <label>仪器型号:</label>
+                  <span>仪器型号:</span>
                 </td>
                 <td>{this.state.contact.yiqixinghao}</td>
                 <td>
-                  <label>仪器编号:</label>
+                  <span>仪器编号:</span>
                 </td>
                 <td>{this.state.contact.yiqibh}</td>
               </tr>
               <tr>
                 <td>
-                  <label>包箱:</label>
+                  <span>包箱:</span>
                 </td>
                 <td>{this.state.contact.baoxiang}</td>
                 <td>审核:</td>
@@ -180,7 +180,7 @@ class DlgDetail extends React.Component {
               </tr>
               <tr>
                 <td>
-                  <label>入库时间:</label>
+                  <span>入库时间:</span>
                 </td>
                 <td>{this.state.contact.yujifahuo_date}</td>
                 <td>调试时间:</td>
@@ -188,7 +188,7 @@ class DlgDetail extends React.Component {
               </tr>
               <tr>
                 <td>
-                  <label>合同编号:</label>
+                  <span>合同编号:</span>
                 </td>
                 <td>{this.state.contact.hetongbh}</td>
                 <td>方法:</td>

@@ -215,7 +215,7 @@ class UsePacks2 extends React.Component {
           <tbody>{usepackRows}</tbody>
         </Table>
         <div style={{ display: 'flex', alignItems: 'center' }}>
-          <label>输入包:</label>
+          <span>输入包:</span>
           <Autosuggest
             ref={this.auto1}
             inputProps={{
@@ -245,7 +245,7 @@ class UsePacks2 extends React.Component {
             alignItems: 'center',
           }}
         >
-          <label>新包名称：</label>
+          <span>新包名称：</span>
           <input
             placeholder="新包"
             value={this.state.newPackName}

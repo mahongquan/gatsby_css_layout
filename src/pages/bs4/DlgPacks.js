@@ -193,9 +193,9 @@ class DlgPacks extends Component {
             <tbody id="contact-list">{contactRows}</tbody>
           </Table>
           {prev}
-          <label id="page">
+          <span id="page">
             {this.state.start + 1}../{this.state.total}
-          </label>
+          </span>
           {next}
           <input
             maxLength="6"

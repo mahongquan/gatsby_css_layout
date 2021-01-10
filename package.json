@@ -38,8 +38,8 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
+    "build": "gatsby build ",
+    "develop": "gatsby develop -p 3000",
     "format": "prettier --write 'src/pages/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
   }

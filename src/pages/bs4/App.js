@@ -330,7 +330,9 @@ export default class App extends Component {
         <td>{contact.addr}</td>
         <td>{contact.hetongbh}</td>
         <td>
-          <span
+          <span role = "button"
+          tabIndex={0}
+          onKeyDown={()=>{}}
             className="mylink"
             onClick={() => this.handleEdit(idx)}
           >
@@ -596,12 +598,16 @@ export default class App extends Component {
             <tr>
               <th>ID</th>
               <th>
-                <span onClick={this.handleClickFilter}>客户单位</span>
+                <span role = "button"
+          tabIndex={0}
+          onKeyDown={()=>{}} onClick={this.handleClickFilter}>客户单位</span>
               </th>
               <th>客户地址</th>
               <th>合同编号</th>
               <th>
-                <span onClick={this.handleClickFilter}>仪器编号</span>
+                <span role = "button"
+          tabIndex={0}
+          onKeyDown={()=>{}} onClick={this.handleClickFilter}>仪器编号</span>
               </th>
               <th>仪器型号</th>
               <th>通道配置</th>

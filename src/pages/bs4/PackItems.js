@@ -170,7 +170,7 @@ class PackItems extends React.Component {
           <tbody>{itemRows}</tbody>
         </Table>
         <div style={{ display: 'flex', alignItems: 'center' }}>
-          <label>输入已有备件</label>
+          <span>输入已有备件</span>
           <Autosuggest
             inputProps={{
               value: this.state.auto_value,
@@ -191,7 +191,7 @@ class PackItems extends React.Component {
           />
         </div>
         <div style={{ display: 'flex', alignItems: 'center' }}>
-          <label>新备件名称：</label>
+          <span>新备件名称：</span>
           <input
             id="new_pack1"
             placeholder="新备件"

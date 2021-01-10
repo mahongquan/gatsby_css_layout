@@ -62,7 +62,7 @@ class DlgStat extends Component {
       labels: this.state.lbls,
       datasets: [
         {
-          label: '调试台数',
+          span: '调试台数',
           data: this.state.values,
           backgroundColor: bg,
           borderWidth: 2,

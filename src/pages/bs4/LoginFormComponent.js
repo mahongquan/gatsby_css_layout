@@ -31,7 +31,7 @@ class LoginFormComponent extends React.Component {
         <tbody>
           <tr>
             <td>
-              <label>用户名:</label>
+              <span>用户名:</span>
             </td>
             <td>
               <input
@@ -44,7 +44,7 @@ class LoginFormComponent extends React.Component {
           </tr>
           <tr>
             <td>
-              <label>密码:</label>
+              <span>密码:</span>
             </td>
             <td>
               <input

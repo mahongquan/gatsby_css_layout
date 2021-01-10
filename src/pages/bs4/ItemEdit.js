@@ -118,7 +118,7 @@ class ItemEdit extends Component {
               </tr>
               <tr>
                 <td>
-                  <label>规格:</label>
+                  <span>规格:</span>
                 </td>
                 <td>
                   <input
@@ -132,7 +132,7 @@ class ItemEdit extends Component {
               </tr>
               <tr>
                 <td>
-                  <label>编号:</label>
+                  <span>编号:</span>
                 </td>
                 <td>
                   <input
@@ -147,7 +147,7 @@ class ItemEdit extends Component {
               </tr>
               <tr>
                 <td>
-                  <label>数量:</label>
+                  <span>数量:</span>
                 </td>
                 <td>
                   <input
@@ -162,7 +162,7 @@ class ItemEdit extends Component {
               </tr>
               <tr>
                 <td>
-                  <label>单位:</label>
+                  <span>单位:</span>
                 </td>
                 <td>
                   <input
