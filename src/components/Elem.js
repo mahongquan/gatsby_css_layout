@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 export const Example = styled.div`
   /* all declarations will be prefixed */
   padding: 2em 1em;

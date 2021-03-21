@@ -3,7 +3,7 @@ import Highlight from 'react-highlight'
 import Elem, { NavWrapper, LinkPrev } from '../components/Elem'
 import App from '../components/App'
 
-import { withTheme } from 'styled-components'
+//import { withTheme } from 'styled-components'
 // console.log(ThemeProvider);
 
 // class E0 extends Component{
@@ -109,4 +109,4 @@ section {
     )
   }
 }
-export default withTheme(float_layout)
+export default float_layout;
