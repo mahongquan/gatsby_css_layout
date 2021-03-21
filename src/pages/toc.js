@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
 import { LinkToc, Tag } from '../components/Elem'
 // import styled from 'styled-components';
-import AceEditor from 'react-ace'
-import 'brace/mode/css'
-import 'brace/theme/github'
+import AceEditor from '../components/Ace'
 import App from '../components/App'
 const Toc_style = `
     display:flex;

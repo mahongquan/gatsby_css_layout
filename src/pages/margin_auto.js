@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
 // import Highlight from 'react-highlight'
 import Elem from '../components/Elem'
-import AceEditor from 'react-ace'
-import 'brace/mode/css'
-import 'brace/theme/github'
+import AceEditor from '../components/Ace'
 const css = `
 width: 600px;
 margin: 0 auto;

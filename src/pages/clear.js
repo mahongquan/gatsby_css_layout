@@ -2,9 +2,7 @@ import React, { Component } from 'react'
 import Highlight from 'react-highlight'
 import Elem, { Tag, NavWrapper, LinkPrev } from '../components/Elem'
 import App from '../components/App'
-import AceEditor from 'react-ace'
-import 'brace/mode/css'
-import 'brace/theme/github'
+import AceEditor from '../components/Ace'
 const css = `.box {
   float: left;
   width: 200px;

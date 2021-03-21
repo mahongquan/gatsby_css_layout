@@ -1,10 +1,8 @@
 import React, { Component } from 'react'
 import Elem, { Tag, NavWrapper, LinkPrev } from '../components/Elem'
 import ElemInline from '../components/ElemInline'
-import AceEditor from 'react-ace'
+import AceEditor from '../components/Ace'
 import App from '../components/App'
-import 'brace/mode/css'
-import 'brace/theme/github'
 const css = `
 display:none;
 //visibility:hidden;
@@ -61,7 +59,6 @@ export default class Display extends Component {
           <div style={{ position: 'relative' }}>
             <h2>none</h2>
             <AceEditor
-              ref="editor"
               style={{
                 margin: 'auto',
                 maxWidth: '600px',

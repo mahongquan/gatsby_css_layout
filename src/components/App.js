@@ -113,7 +113,7 @@ class Root extends Component {
     return [prev,next,at]
   }
   render() {
-     console.log(this.props);
+     // console.log(this.props);
      let visible_home=true,visible_toc=true;
       // if(window.location.pathname.indexOf("")>=0){
       //   visible_home="hidden"
