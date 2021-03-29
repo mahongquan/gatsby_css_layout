@@ -43,7 +43,7 @@ export default class float extends Component {
           <LinkPrev href="/position_example/">Previous</LinkPrev>
           <LinkPrev href="/clear/">Next</LinkPrev>
         </NavWrapper>
-        <footer>6 / 19</footer>
+        <footer>6 / 20</footer>
    </App>
     )
   }

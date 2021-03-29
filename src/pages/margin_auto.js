@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 // import Highlight from 'react-highlight'
-import Elem from '../components/Elem'
+import Elem, {Div, NavWrapper, LinkPrev } from '../components/Elem'
 import AceEditor from '../components/Ace'
+import App from '../components/App'
 const css = `
 width: 600px;
 margin: 0 auto;
 `
-export default class margin_auto extends Component {
+class Margin_auto extends Component {
   constructor() {
     super()
     this.state = {
@@ -25,19 +26,8 @@ export default class margin_auto extends Component {
           <h1 className="content">margin: auto;</h1>
 
           <AceEditor
-            ListItem
-            style={{
-              margin: 'auto',
-              maxWidth: '600px',
-              height: '100px',
-              border: 'solid gray 5px',
-            }}
-            mode="css"
-            theme="github"
-            value={this.state.css}
-            onChange={this.cssChange}
-            name="UNIQUE_ID_OF_DIV"
-            editorProps={{ $blockScrolling: true }}
+            css={this.state.css}
+            cssChange={this.cssChange}
           />
           <Elem id="main" css={this.state.css}>
             <p>
@@ -58,6 +48,33 @@ export default class margin_auto extends Component {
           </Elem>
         </div>
       </React.Fragment>
+    )
+  }
+}
+export default class Display extends Component {
+  constructor() {
+    super()
+    this.state = {
+      css: css,
+    }
+  }
+  cssChange = newValue => {
+    this.setState({
+      css: newValue,
+    })
+  }
+  render() {
+    return (
+      <App>
+      <div>
+        <Margin_auto />
+        <NavWrapper>
+          <LinkPrev href="/display/">Previous</LinkPrev>
+          <LinkPrev href="/max_width/">Next</LinkPrev>
+        </NavWrapper>
+        <footer>3 / 20</footer>
+      </div>
+      </App>
     )
   }
 }

@@ -187,7 +187,7 @@ export default class media_queries extends Component {
           <LinkPrev href="/percent/">Previous</LinkPrev>
           <LinkPrev href="/inline_block/">Next</LinkPrev>
         </NavWrapper>
-        <footer>6 / 19</footer>
+        <footer>6 / 20</footer>
       </App>
     )
   }

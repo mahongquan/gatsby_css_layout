@@ -173,7 +173,7 @@ export default class position extends Component {
           <LinkPrev href="/box_sizing/">Previous</LinkPrev>
           <LinkPrev href="/position_example/">Next</LinkPrev>
         </NavWrapper>
-        <footer>6 / 19</footer>
+        <footer>6 / 20</footer>
    </App>
 
     )

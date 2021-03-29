@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import Highlight from 'react-highlight'
 import Elem, { Tag, NavWrapper, LinkPrev } from '../components/Elem'
 import App from '../components/App'
-import AceEditor from '../components/Ace'
 const css = `.box {
   float: left;
   width: 200px;
@@ -104,29 +103,12 @@ export default class clear extends Component {
             <p>I'm box after float.</p>
           </Elem>
         </Tag>
-        {
-          // AceEditor can't use inside Tag, why?
-        }
-        <AceEditor
-          style={{
-            margin: 'auto',
-            maxWidth: '600px',
-            height: '250px',
-            border: 'solid gray 5px',
-          }}
-          mode="css"
-          theme="github"
-          value={this.state.css}
-          onChange={this.cssChange}
-          name="clear_editor"
-          editorProps={{ $blockScrolling: true }}
-        />
       </React.Fragment>
       <NavWrapper>
           <LinkPrev href="/float/">Previous</LinkPrev>
           <LinkPrev href="/clearfix/">Next</LinkPrev>
         </NavWrapper>
-        <footer>6 / 19</footer>
+        <footer>6 / 20</footer>
       </App>
     )
   }

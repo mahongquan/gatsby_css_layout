@@ -87,7 +87,7 @@ export default class box_sizing extends Component {
           <LinkPrev href="/box_model/">Previous</LinkPrev>
           <LinkPrev href="/position/">Next</LinkPrev>
         </NavWrapper>
-        <footer>5 / 19</footer>
+        <footer>5 / 20</footer>
    </App>
     )
   }

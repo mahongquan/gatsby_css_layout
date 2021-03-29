@@ -162,7 +162,7 @@ export default class clearfix extends Component {
           <LinkPrev href="/clear/">Previous</LinkPrev>
           <LinkPrev href="/float_layout/">Next</LinkPrev>
         </NavWrapper>
-        <footer>6 / 19</footer>
+        <footer>6 / 20</footer>
       </App>
     )
   }

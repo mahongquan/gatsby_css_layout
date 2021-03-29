@@ -116,7 +116,7 @@ section {
           <LinkPrev href="/float_layout/">Previous</LinkPrev>
           <LinkPrev href="/media_queries/">Next</LinkPrev>
         </NavWrapper>
-        <footer>6 / 19</footer>
+        <footer>6 / 20</footer>
       </App>
     )
   }

@@ -68,7 +68,6 @@ padding: 1em 0;
   }
 }
 `;
-const pages=["/no-layout","/display","/margin-auto/","/max-width/","/box-model/","/box-sizing/","/position/","/position-example/","/float/","/clear/","/clearfix/","/float-layout/","/percent/","/media-queries/","/inline-block/","/inline-block-layout/","/column/","/flexbox/","/frameworks/","/about/","/"]
 class Root extends Component {
       constructor(){
       super();
@@ -87,61 +86,8 @@ class Root extends Component {
             logo_style:newValue
         });
     }
-  getPrevNext=()=>{
-    let prev,next,at;
-    for(var i=0;i<pages.length;i++){
-       console.log(window);
-       if(window.location.pathname.indexOf(pages[i])>=0){
-         prev=i-1;
-         next=i+1;
-         if(prev>=0){
-            prev=pages[prev];
-         }
-         else{
-            prev=undefined;
-         }
-         if(next<pages.length){
-            next=pages[next];
-         }
-         else{
-            next=undefined;
-         }
-         at=i;
-         break;
-       }
-    }
-    return [prev,next,at]
-  }
   render() {
-     // console.log(this.props);
      let visible_home=true,visible_toc=true;
-      // if(window.location.pathname.indexOf("")>=0){
-      //   visible_home="hidden"
-      // }
-      // else{
-      //   visible_home="visible" 
-      // }
-      // if(this.props.history.location.pathname.indexOf("toc.html")>=0){
-      //   visible_toc="hidden"
-      // }
-      // else{
-      //   visible_toc="visible" 
-      // }
-      // var arr1=this.getPrevNext();
-      // let prev=arr1[0];
-      // let next=arr1[1];
-      // let i=arr1[2]+1;
-      // if(prev){
-      //   prev=<LinkPrev to={prev}>Previous</LinkPrev>
-      // }
-      // if(next){
-      //   next=<LinkPrev to={next}>Next</LinkPrev>
-      // }
-      // let nav;
-      // if(prev || next){
-      //   nav=<React.Fragment><NavWrapper>{prev}{next}</NavWrapper>
-      //   <footer>{i} / 21</footer></React.Fragment>
-      // }
     return (
       <div>
         <style jsx="true">{`

@@ -68,7 +68,7 @@ export default class column extends Component {
           <LinkPrev href="/inline_block_layout/">Previous</LinkPrev>
           <LinkPrev href="/flexbox/">Next</LinkPrev>
         </NavWrapper>
-        <footer>6 / 19</footer>
+        <footer>6 / 20</footer>
       </App>
     )
   }

@@ -104,7 +104,7 @@ section {
           <LinkPrev href="/clearfix/">Previous</LinkPrev>
           <LinkPrev href="/percent/">Next</LinkPrev>
         </NavWrapper>
-        <footer>6 / 19</footer>
+        <footer>6 / 20</footer>
       </App>
     )
   }

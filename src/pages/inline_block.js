@@ -84,45 +84,12 @@ export default class inline_block extends Component {
         <div className="content" style={{ position: 'relative' }}>
           <h2>The Hard Way (using float)</h2>
 
-          <div
-            style={{
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'flex-end',
-              position: 'absolute',
-              zIndex: 100,
-              top: 0,
-              right: 0,
-            }}
-          >
-            <button
-              onClick={() => {
-                if (this.state.displayAce === 'none') {
-                  this.setState({ displayAce: 'block' })
-                } else {
-                  this.setState({ displayAce: 'none' })
-                }
-              }}
-            >
-              edit box style
-            </button>
+          
             <AceEditor
-              
-              style={{
-                display: this.state.displayAce,
-                width: '200px',
-                height: '150px',
-                border: 'solid gray 5px',
-              }}
-              mode={this.state.mode}
-              theme="github"
-              value={this.state.style_box}
-              onChange={this.onChange}
-              name="UNIQUE_ID_OF_DIV"
-              editorProps={{ $blockScrolling: true }}
+              css={this.state.style_box}
+              cssChange={this.onChange}
             />
-          </div>
-        </div>
+            </div>
         <Div className="content" css={this.state.style_box}>
           {boxes}
           <Elem section green className="after-box">
@@ -136,44 +103,11 @@ export default class inline_block extends Component {
             value of the <code>display</code> property.
           </p>
 
-          <div
-            style={{
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'flex-end',
-              position: 'absolute',
-              zIndex: 100,
-              top: 0,
-              right: 0,
-            }}
-          >
-            <button
-              onClick={() => {
-                if (this.state.displayAce2 === 'none') {
-                  this.setState({ displayAce2: 'block' })
-                } else {
-                  this.setState({ displayAce2: 'none' })
-                }
-              }}
-            >
-              edit box2 style
-            </button>
-            <AceEditor
-              ListItem
-              style={{
-                display: this.state.displayAce2,
-                width: '300px',
-                height: '100px',
-                border: 'solid gray 5px',
-              }}
-              mode={this.state.mode}
-              theme="github"
-              value={this.state.style_box2}
-              onChange={this.onChange2}
-              name="UNIQUE_ID_OF_DIV"
-              editorProps={{ $blockScrolling: true }}
+             <AceEditor
+              css={this.state.style_box2}
+              cssChange={this.onChange2}
             />
-          </div>
+      
         </div>
         <Div className="content" css={this.state.style_box2}>
           {boxes2}
@@ -199,7 +133,7 @@ export default class inline_block extends Component {
           <LinkPrev href="/media_queries/">Previous</LinkPrev>
           <LinkPrev href="/inline_block_layout/">Next</LinkPrev>
         </NavWrapper>
-        <footer>6 / 19</footer>
+        <footer>6 / 20</footer>
       </App>
 
     )

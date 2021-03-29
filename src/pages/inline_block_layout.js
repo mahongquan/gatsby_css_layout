@@ -107,7 +107,7 @@ nav {
           <LinkPrev href="/inline_block/">Previous</LinkPrev>
           <LinkPrev href="/column/">Next</LinkPrev>
         </NavWrapper>
-        <footer>6 / 19</footer>
+        <footer>6 / 20</footer>
       </App>
 
     )

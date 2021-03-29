@@ -338,7 +338,7 @@ export default class flexbox extends Component {
           <LinkPrev href="/column/">Previous</LinkPrev>
           <LinkPrev href="/frameworks/">Next</LinkPrev>
         </NavWrapper>
-        <footer>6 / 19</footer>
+        <footer>6 / 20</footer>
       </App>
     )
   }

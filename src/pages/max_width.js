@@ -39,7 +39,7 @@ export default class Max_width extends Component {
           <LinkPrev href="/display/">Previous</LinkPrev>
           <LinkPrev href="/box_model/">Next</LinkPrev>
         </NavWrapper>
-        <footer>3 / 19</footer>
+        <footer>3 / 20</footer>
       </div>
       </App>
     )

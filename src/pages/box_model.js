@@ -62,7 +62,7 @@ export default class box_model extends Component {
           <LinkPrev href="/box_model/">Previous</LinkPrev>
           <LinkPrev href="/box_sizing/">Next</LinkPrev>
         </NavWrapper>
-        <footer>4 / 19</footer>
+        <footer>4 / 20</footer>
    </App>
     )
   }

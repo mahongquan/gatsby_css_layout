@@ -59,18 +59,8 @@ export default class Display extends Component {
           <div style={{ position: 'relative' }}>
             <h2>none</h2>
             <AceEditor
-              style={{
-                margin: 'auto',
-                maxWidth: '600px',
-                height: '100px',
-                border: 'solid gray 5px',
-              }}
-              mode="css"
-              theme="github"
-              value={this.state.css}
-              onChange={this.cssChange}
-              name="UNIQUE_ID_OF_DIV"
-              editorProps={{ $blockScrolling: true }}
+              css={this.state.css}
+              cssChange={this.cssChange}
             />
             <Tag css={this.state.css} id="idnone">
               You found me!
@@ -110,9 +100,9 @@ export default class Display extends Component {
         </div>
         <NavWrapper>
           <LinkPrev href="/no_layout/">Previous</LinkPrev>
-          <LinkPrev href="/max_width/">Next</LinkPrev>
+          <LinkPrev href="/margin_auto/">Next</LinkPrev>
         </NavWrapper>
-        <footer>2 / 19</footer>
+        <footer>2 / 20</footer>
       </div>
       </App>
     )

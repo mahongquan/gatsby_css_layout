@@ -24,7 +24,7 @@ export default class No_layout extends Component {
           <LinkPrev href="/home/">Previous</LinkPrev>
           <LinkPrev href="/display/">Next</LinkPrev>
         </NavWrapper>
-        <footer>1 / 19</footer>
+        <footer>1 / 20</footer>
       </div>
     </App>
     )

@@ -133,7 +133,7 @@ body {
           <LinkPrev href="/position/">Previous</LinkPrev>
           <LinkPrev href="/float/">Next</LinkPrev>
         </NavWrapper>
-        <footer>6 / 19</footer>
+        <footer>6 / 20</footer>
    </App>
 
     )
