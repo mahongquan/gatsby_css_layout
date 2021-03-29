@@ -10,7 +10,6 @@ export default class box_model extends Component {
         <h1 className="content">the box model</h1>
         <style jsx="true">{`
           .simple {
-            width: 500px;
             margin: 20px auto;
             -webkit-box-sizing: content-box;
             -moz-box-sizing: content-box;
@@ -18,7 +17,6 @@ export default class box_model extends Component {
           }
 
           .fancy {
-            width: 500px;
             margin: 20px auto;
             padding: 50px;
             border-width: 10px;
@@ -38,12 +36,10 @@ export default class box_model extends Component {
         </p>
         <figure className="highlight">
           <Highlight>{`.simple {
-  width: 500px;
   margin: 20px auto;
 }
 
 .fancy {
-  width: 500px;
   margin: 20px auto;
   padding: 50px;
   border-width: 10px;

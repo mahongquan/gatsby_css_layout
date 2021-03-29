@@ -59,7 +59,7 @@ export default class Toc extends Component {
               edit style
             </button>
             <AceEditor
-              ref="editor"
+              ListItem
               style={{
                 display: this.state.displayAce,
                 width: '350px',

@@ -11,7 +11,6 @@ export default class box_sizing extends Component {
         <h1 className="content">box-sizing</h1>
         <style jsx="true">{`
           .simple {
-            width: 500px;
             margin: 20px auto;
             -webkit-box-sizing: border-box;
             -moz-box-sizing: border-box;
@@ -19,7 +18,6 @@ export default class box_sizing extends Component {
           }
 
           .fancy {
-            width: 500px;
             margin: 20px auto;
             padding: 50px;
             border: solid #6ac5ac 10px;
@@ -38,7 +36,7 @@ export default class box_sizing extends Component {
         </p>
         <figure className="highlight">
           <Highlight>{`.simple {
-  width: 500px;
+
   margin: 20px auto;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -46,7 +44,7 @@ export default class box_sizing extends Component {
 }
 
 .fancy {
-  width: 500px;
+
   margin: 20px auto;
   padding: 50px;
   border: solid blue 10px;

@@ -40,7 +40,6 @@ export default class position extends Component {
   top: -20px;
   left: 20px;
   background-color: white;
-  width: 500px;
 }`}</Highlight>
         </figure>
         <Elem id="relative1" style={{ position: 'relative' }}>
@@ -57,7 +56,6 @@ export default class position extends Component {
             top: '-20px',
             left: '20px',
             backgroundColor: 'white',
-            width: '500px',
           }}
         >
           <p style={{ marginTop: '22px' }}>
@@ -127,14 +125,12 @@ export default class position extends Component {
         <figure className="highlight">
           <Highlight>{`#relative {
   position: relative;
-  width: 600px;
   height: 400px;
 }
 #absolute {
   position: absolute;
   top: 120px;
   right: 0;
-  width: 300px;
   height: 200px;
 }`}</Highlight>
         </figure>
@@ -142,7 +138,6 @@ export default class position extends Component {
           id="relative"
           style={{
             position: 'relative',
-            width: '600px',
             height: '400px',
           }}
         >
@@ -157,8 +152,8 @@ export default class position extends Component {
             style={{
               position: 'absolute',
               top: '120px',
+              width:"150px",
               right: 0,
-              width: '300px',
               height: '200px',
             }}
           >

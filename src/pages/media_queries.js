@@ -52,8 +52,7 @@ export default class media_queries extends Component {
         </p>
         <div style={{ position: 'relative' }}>
           <AceEditor
-            ref="editor"
-            style={{
+              style={{
               margin: 'auto',
               maxWidth: '600px',
               height: '250px',

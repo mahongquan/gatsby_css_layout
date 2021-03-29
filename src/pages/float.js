@@ -25,7 +25,7 @@ export default class float extends Component {
 }`}</Highlight>
         </figure>
         <p className="content ipsum">
-          <img alt="ilta" src="./images/ilta.png" />
+          <img alt="ilta" src="/images/ilta.png" />
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
           imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae
           scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices

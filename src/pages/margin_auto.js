@@ -25,7 +25,7 @@ export default class margin_auto extends Component {
           <h1 className="content">margin: auto;</h1>
 
           <AceEditor
-            ref="editor"
+            ListItem
             style={{
               margin: 'auto',
               maxWidth: '600px',

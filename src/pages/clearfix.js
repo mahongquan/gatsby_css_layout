@@ -6,7 +6,7 @@ export default class clearfix extends Component {
   render() {
     return (
     <App>
-      <React.Fragment>
+      <div style={{width:"600px"}}>
         <h1 className="content">the clearfix hack</h1>
         <p className="content">
           Here is a weird, bad thing that can sometimes happen when using
@@ -63,7 +63,7 @@ export default class clearfix extends Component {
                 </li>
               </ul>
             </Elem>
-            <img alt="ilta" src="./images/ilta.png" />
+            <img alt="ilta" src="/images/ilta.png" />
             <p>
               Uh oh... this image is taller than the element containing it, and
               it&apos;s floated, so it&apos;s overflowing outside of its
@@ -134,7 +134,7 @@ export default class clearfix extends Component {
                 </li>
               </ul>
             </Elem>
-            <img alt="ilta" src="./images/ilta.png" />
+            <img alt="ilta" src="/images/ilta.png" />
             <p>Much better!</p>
           </Elem>
         </div>
@@ -157,7 +157,7 @@ export default class clearfix extends Component {
           </a>, but this simple solution will work for the vast majority of
           browsers today.
         </p>
-      </React.Fragment>
+      </div>
       <NavWrapper>
           <LinkPrev href="/clear/">Previous</LinkPrev>
           <LinkPrev href="/float_layout/">Next</LinkPrev>

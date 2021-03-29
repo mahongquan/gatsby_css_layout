@@ -107,7 +107,7 @@ export default class inline_block extends Component {
               edit box style
             </button>
             <AceEditor
-              ref="editor"
+              
               style={{
                 display: this.state.displayAce,
                 width: '200px',
@@ -159,7 +159,7 @@ export default class inline_block extends Component {
               edit box2 style
             </button>
             <AceEditor
-              ref="editor"
+              ListItem
               style={{
                 display: this.state.displayAce2,
                 width: '300px',
